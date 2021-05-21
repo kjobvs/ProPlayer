@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{715254bc-d70b-4ec5-bf29-467dd3ace079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scene">
+      <UniqueIdentifier>{f3a7466f-9e9f-4504-be73-be3035e36e36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="myLib">
+      <UniqueIdentifier>{5160259b-0ac4-46c0-9301-34f5895c0956}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="myAction">
+      <UniqueIdentifier>{08bf38e5-2ff5-48ff-944b-d3117e6aae80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameData">
+      <UniqueIdentifier>{dd50d3b1-76a8-49a6-b0f6-57f1be5eb4db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameControl">
+      <UniqueIdentifier>{0e558206-66d9-40ce-913a-31645b413b59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="myScript">
+      <UniqueIdentifier>{350af6bd-99ce-4254-9835-c29dc5a3f621}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\scene\BaseScene.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\scene\BootScene.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\public\CLFunction.cpp">
+      <Filter>myLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\public\FileAccess.cpp">
+      <Filter>myLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\public\myData.cpp">
+      <Filter>myLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\public\myFunction.cpp">
+      <Filter>myLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\public\myInput.cpp">
+      <Filter>myLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\public\myScene.cpp">
+      <Filter>myLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\public\myType.cpp">
+      <Filter>myLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\customAction\MultiNode.cpp">
+      <Filter>myAction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\customAction\MultiNodeFade.cpp">
+      <Filter>myAction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataLoader\Actor.cpp">
+      <Filter>GameData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataLoader\DataManagerEx.cpp">
+      <Filter>GameData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataLoader\GameData.cpp">
+      <Filter>GameData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\scene\StartScene.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameControl\GameControl.cpp">
+      <Filter>GameControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\scene\StoryScene.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\script\Script.cpp">
+      <Filter>myScript</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\script\ScriptAudio.cpp">
+      <Filter>myScript</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\script\ScriptLine.cpp">
+      <Filter>myScript</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\script\ScriptScene.cpp">
+      <Filter>myScript</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\script\ScriptSprite.cpp">
+      <Filter>myScript</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataLoader\Line.cpp">
+      <Filter>GameData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\script\ScriptManager.cpp">
+      <Filter>myScript</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\WindowLayer.cpp" />
+    <ClCompile Include="..\Classes\ImageLayer.cpp" />
+    <ClCompile Include="..\Classes\BackGroundLayer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\scene\BaseScene.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\scene\BootScene.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\public\CLFunction.h">
+      <Filter>myLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\public\FileAccess.h">
+      <Filter>myLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\public\myData.h">
+      <Filter>myLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\public\myFunction.h">
+      <Filter>myLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\public\myInput.h">
+      <Filter>myLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\public\myScene.h">
+      <Filter>myLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\public\myType.h">
+      <Filter>myLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\customAction\MultiNode.h">
+      <Filter>myAction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\customAction\MultiNodeFade.h">
+      <Filter>myAction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DataLoader\GameData.h">
+      <Filter>GameData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DataLoader\Actor.h">
+      <Filter>GameData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DataLoader\DataManagerEx.h">
+      <Filter>GameData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\scene\StartScene.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameControl\GameControl.h">
+      <Filter>GameControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\scene\StoryScene.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\script\Script.h">
+      <Filter>myScript</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\script\ScriptAudio.h">
+      <Filter>myScript</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\script\ScriptLine.h">
+      <Filter>myScript</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\script\ScriptScene.h">
+      <Filter>myScript</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\script\ScriptSprite.h">
+      <Filter>myScript</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DataLoader\Line.h">
+      <Filter>GameData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\script\ScriptManager.h">
+      <Filter>myScript</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\WindowLayer.h" />
+    <ClInclude Include="..\Classes\ImageLayer.h" />
+    <ClInclude Include="..\Classes\BackGroundLayer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
