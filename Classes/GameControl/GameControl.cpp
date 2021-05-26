@@ -58,9 +58,7 @@ void GameControl::startGame()
 
 void GameControl::gameLoop()
 {
-	//lock_guard<mutex> guard(script_mutex);
-	if (progressExpect == 100000009)
-		log("attepmt to update 1000008");
+	log((myType::turnString(progress) + ":" + myType::turnString(progressExpect)).c_str());
 	auto script = ScriptManager::getInstance()->getScriptByTag(progress);
 	int result = script->start();
 	if (result == 1)
@@ -76,9 +74,12 @@ void GameControl::gameLoop()
 
 void GameControl::advanceProgress()
 {
-	++progressExpect;
-	updateProgress(1.0);
-	log((myType::turnString(progress)+":"+myType::turnString(progressExpect)).c_str());
+	if (progress == progressExpect)
+		++progressExpect;
+	if (progress < progressExpect)
+	{
+		gameLoop();
+	}
 }
 
 void GameControl::update(float delta)
@@ -94,7 +95,6 @@ void GameControl::update(float delta)
 
 void GameControl::updateProgress(float)
 {
-	//lock_guard<mutex> guard(script_mutex);
 	if (progress < progressExpect)
 		gameLoop();
 }
