@@ -37,6 +37,7 @@
     <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v140_xp</PlatformToolset>
     <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
     <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v141_xp</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -157,6 +158,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClCompile Include="..\Classes\DataLoader\DataManagerEx.cpp" />
     <ClCompile Include="..\Classes\DataLoader\GameData.cpp" />
     <ClCompile Include="..\Classes\DataLoader\Line.cpp" />
+    <ClCompile Include="..\Classes\GuideMenuBar.cpp" />
     <ClCompile Include="..\Classes\ImageLayer.cpp" />
     <ClCompile Include="..\Classes\GameControl\GameControl.cpp" />
     <ClCompile Include="..\Classes\public\CLFunction.cpp" />
@@ -176,6 +178,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClCompile Include="..\Classes\script\ScriptManager.cpp" />
     <ClCompile Include="..\Classes\script\ScriptScene.cpp" />
     <ClCompile Include="..\Classes\script\ScriptSprite.cpp" />
+    <ClCompile Include="..\Classes\TouchLayer.cpp" />
     <ClCompile Include="..\Classes\WindowLayer.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
@@ -188,6 +191,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClInclude Include="..\Classes\DataLoader\DataManagerEx.h" />
     <ClInclude Include="..\Classes\DataLoader\GameData.h" />
     <ClInclude Include="..\Classes\DataLoader\Line.h" />
+    <ClInclude Include="..\Classes\GuideMenuBar.h" />
     <ClInclude Include="..\Classes\ImageLayer.h" />
     <ClInclude Include="..\Classes\GameControl\GameControl.h" />
     <ClInclude Include="..\Classes\public\CLFunction.h" />
@@ -207,6 +211,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClInclude Include="..\Classes\script\ScriptManager.h" />
     <ClInclude Include="..\Classes\script\ScriptScene.h" />
     <ClInclude Include="..\Classes\script\ScriptSprite.h" />
+    <ClInclude Include="..\Classes\TouchLayer.h" />
     <ClInclude Include="..\Classes\WindowLayer.h" />
     <ClInclude Include="main.h" />
   </ItemGroup>

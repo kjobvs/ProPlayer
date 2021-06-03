@@ -161,8 +161,7 @@ bool StartScene::checkLoadFile()
 {
 	for (size_t i = 0; i < GameControl::getInstance()->getMaxSaveFile(); i++)
 	{
-		string pathName = FileUtils::getInstance()->getWritablePath();
-		pathName+="Save/saveFile" + myType::padZero(2,i) + ".sav";
+		string pathName = "Save/saveFile" + myType::padZero(2,i) + ".sav";
 		log(pathName.c_str());
 		bool result = FileUtils::getInstance()->isFileExist(pathName);
 		if (result)
