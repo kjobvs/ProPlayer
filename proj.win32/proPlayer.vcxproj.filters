@@ -111,8 +111,6 @@
     <ClCompile Include="..\Classes\WindowLayer.cpp" />
     <ClCompile Include="..\Classes\ImageLayer.cpp" />
     <ClCompile Include="..\Classes\BackGroundLayer.cpp" />
-    <ClCompile Include="..\Classes\TouchLayer.cpp" />
-    <ClCompile Include="..\Classes\GuideMenuBar.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -196,8 +194,6 @@
     <ClInclude Include="..\Classes\WindowLayer.h" />
     <ClInclude Include="..\Classes\ImageLayer.h" />
     <ClInclude Include="..\Classes\BackGroundLayer.h" />
-    <ClInclude Include="..\Classes\TouchLayer.h" />
-    <ClInclude Include="..\Classes\GuideMenuBar.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="game.rc">

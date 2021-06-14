@@ -30,6 +30,8 @@ private:
 	void initGuideMenu();
 	void initDialog();
 	void initAnimation() override;
+	
+	void initInput();
 
 	void update(float delta) override;
 	void updateActor();

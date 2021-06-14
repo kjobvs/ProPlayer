@@ -12,9 +12,6 @@ public:
 	static WindowLayer* create();
 	std::string getDescription() const override;
 
-
-	virtual bool init() override;
-
 	void addNewString(std::string newStr);
 
 	void enableActorName(bool status,std::string name = "");
@@ -22,7 +19,8 @@ public:
 CC_CONSTRUCTOR_ACCESS:
 	WindowLayer();
 	virtual ~WindowLayer();
-	/*override function*/
+
+	virtual bool init() override;
 	void setContentSize(const cocos2d::Size& contentSize) override;
 	void initInterface();
 	void initClipping();
